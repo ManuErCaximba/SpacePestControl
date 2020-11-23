@@ -4,29 +4,36 @@
 
 #include "CoreMinimal.h"
 #include "GameFramework/Actor.h"
+#include "Components/BoxComponent.h"
 #include "TestMap.generated.h"
 
 UCLASS()
 class SPACEPESTCONTROL_API ATestMap : public AActor
 {
 	GENERATED_BODY()
+
 	
 public:	
 	// Sets default values for this actor's properties
 	ATestMap();
 
+	
 	UPROPERTY(EditAnywhere)
-	UStaticMeshComponent* MapMesh;
+	UBoxComponent* IWRight;
 
 	UPROPERTY(EditAnywhere)
-	UTexture2D* MapTexture;
+	UBoxComponent* IWLeft;
+
+	UPROPERTY(EditAnywhere)
+	UBoxComponent* IWBottom;
+
+	// Called every frame
+	virtual void Tick(float DeltaTime) override;
+
 
 protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
 
-public:	
-	// Called every frame
-	virtual void Tick(float DeltaTime) override;
+};	
 
-};
