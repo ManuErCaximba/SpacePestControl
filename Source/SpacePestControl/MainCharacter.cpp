@@ -6,7 +6,7 @@
 // Sets default values
 AMainCharacter::AMainCharacter()
 {
- 	// Set this pawn to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
+	// Set this pawn to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = true;
 
 	// Set this pawn to be controlled by the lowest-numbered player
@@ -26,7 +26,7 @@ AMainCharacter::AMainCharacter()
 void AMainCharacter::BeginPlay()
 {
 	Super::BeginPlay();
-	
+
 }
 
 // Called every frame
@@ -42,4 +42,3 @@ void AMainCharacter::SetupPlayerInputComponent(class UInputComponent* PlayerInpu
 	Super::SetupPlayerInputComponent(PlayerInputComponent);
 
 }
-

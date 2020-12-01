@@ -82,4 +82,3 @@ void ATestMap::Tick(float DeltaTime)
 	Super::Tick(DeltaTime);
 
 }
-

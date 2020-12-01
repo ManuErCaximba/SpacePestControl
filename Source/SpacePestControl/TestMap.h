@@ -12,12 +12,12 @@ class SPACEPESTCONTROL_API ATestMap : public AActor
 {
 	GENERATED_BODY()
 
-	
-public:	
+
+public:
 	// Sets default values for this actor's properties
 	ATestMap();
 
-	
+
 	UPROPERTY(EditAnywhere)
 	UBoxComponent* IWRight;
 
@@ -35,5 +35,4 @@ protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
 
-};	
-
+};

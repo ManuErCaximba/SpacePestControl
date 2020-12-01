@@ -10,3 +10,6 @@ Intermediate/AssetRegistryCache filter=lfs diff=lfs merge=lfs -text
 Intermediate/Build filter=lfs diff=lfs merge=lfs -text
 Intermediate/CachedAssetRegistry.bin filter=lfs diff=lfs merge=lfs -text
 Intermediate/Config filter=lfs diff=lfs merge=lfs -text
+Binaries/** filter=lfs diff=lfs merge=lfs -text
+Content/** filter=lfs diff=lfs merge=lfs -text
+Intermediate/** filter=lfs diff=lfs merge=lfs -text
