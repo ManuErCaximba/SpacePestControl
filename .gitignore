@@ -1,2 +1,11 @@
 # Visual Studio 2015 user specific files
 .vs/
+
+# Executable files and other files created during compiling.
+Binaries/
+
+# Temporary files generated during building the engine or game.
+Intermediate/
+
+# Game's assets. This assets will be tracked with Google Drive due to their size.
+Content/
