@@ -5,6 +5,7 @@
 #include "CoreMinimal.h"
 #include "GameFramework/Actor.h"
 #include "Components/BoxComponent.h"
+#include "Engine/BlockingVolume.h"
 #include "TestMap.generated.h"
 
 UCLASS()
@@ -17,7 +18,16 @@ public:
 	// Sets default values for this actor's properties
 	ATestMap();
 
+	// Called every frame
+	virtual void Tick(float DeltaTime) override;
 
+
+protected:
+	// Called when the game starts or when spawned
+	virtual void BeginPlay() override;
+
+public:
+	// Attributes
 	UPROPERTY(EditAnywhere)
 	UBoxComponent* IWRight;
 
@@ -27,12 +37,10 @@ public:
 	UPROPERTY(EditAnywhere)
 	UBoxComponent* IWBottom;
 
-	// Called every frame
-	virtual void Tick(float DeltaTime) override;
+	UPROPERTY(EditAnywhere)
+	UBoxComponent* IWTop;
 
-
-protected:
-	// Called when the game starts or when spawned
-	virtual void BeginPlay() override;
+	UPROPERTY(EditAnywhere)
+	UStaticMeshComponent* MapMesh;
 
 };
