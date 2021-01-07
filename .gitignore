@@ -9,3 +9,6 @@ Intermediate/
 
 # Game's assets. This assets will be tracked with Google Drive due to their size.
 Content/
+
+# Logs and this stuff
+Saved/
